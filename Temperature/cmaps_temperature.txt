@@ -1,0 +1,16 @@
+Packages available on conda-forge:
+
+cmaps
+cmocean
+
+How to read in specific colormaps in Python:
+
+cmaps.cmp_haxby (N=64)
+cmaps.BlueYellowRed (N=254)
+cmaps.WhBlGrYeRe (N=100)
+cmaps.BlAqGrYeOrReVi200 (N=200)
+
+cmocean.cm.thermal (N=256)
+
+
+
