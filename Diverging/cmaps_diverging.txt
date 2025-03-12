@@ -1,0 +1,23 @@
+Packages available on conda-forge:
+
+cmaps
+cmocean
+
+How to read in specific colormaps in Python:
+
+cmaps.BlueYellowRed
+cmaps.MPL_BrBG
+
+cmocean.cm.diff
+cmocean.cm.tarn
+
+Add white to middle of cmaps colormaps:
+
+cmap_name = 'BlueYellowRed_r'
+spacing = 16 # keep as multiples of 4, larger numbers = more white space in the middle
+mpl.colormaps.unregister(cmap_name)
+cmap_orig = getattr(cmaps,cmap_name)
+cmap_length = cmap_orig.N
+colors = cmap_orig(np.linspace(0,1,cmap_length))
+colors = np.insert(colors,len(colors)//2,[[1,1,1,1] for _ in range(spacing)],axis=0)
+colormap = mpl.colors.LinearSegmentedColormap.from_list(cmap_name+'_new',colors,N=cmap_length+spacing)
