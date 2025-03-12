@@ -1,0 +1,16 @@
+Packages available on conda-forge:
+
+cmaps
+cmocean
+matplotlib
+
+How to read in specific colormaps in Python:
+
+cmaps.cmp_haxby_r (N=64)
+cmaps.MPL_gist_earth_r (N=128)
+
+cmocean.cm.rain (N=256)
+
+cmap = 'Blues' (N=256)
+
+
