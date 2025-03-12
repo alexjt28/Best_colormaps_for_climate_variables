@@ -5,11 +5,11 @@ cmocean
 
 How to read in specific colormaps in Python:
 
-cmaps.BlueYellowRed
-cmaps.MPL_BrBG
+cmaps.BlueYellowRed (N=254)
+cmaps.MPL_BrBG (N=128)
 
-cmocean.cm.diff
-cmocean.cm.tarn
+cmocean.cm.diff (N=256)
+cmocean.cm.tarn (N=256)
 
 Add white to middle of cmaps colormaps:
 
